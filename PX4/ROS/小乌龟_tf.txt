@@ -1,0 +1,8 @@
+书中小乌龟TF例子，没有写的操作步骤
+1.编写broadcaster和listener代码，注意容易写错
+2.在package.xml文件中添加tf和turtlesim的依赖
+3.在CMakeLists.txt文件中，添加对tf和turtlesim的依赖；添加executable()和target_link()
+4.在learning_tf目录下添加launch文件夹，并编写launch文件
+5.回到工作空间编译catkin_make
+6.打开新终端启动launch，用命令roslaunch learning_tf start_demo_with_listener.launch
+

@@ -1,0 +1,15 @@
+1.px4开发环境搭建
+https://www.cnblogs.com/cporoske/p/11630426.html
+
+http://dev.px4.io/master/zh/setup/dev_env_linux_ubuntu.html
+
+https://blog.csdn.net/zouxu634866/article/details/88053182
+
+2.px4 github
+https://github.com/PX4/Firmware
+
+3.清华源
+https://mirrors.tuna.tsinghua.edu.cn/qt/
+
+4.Linux Shell脚本教程
+http://c.biancheng.net/cpp/shell/

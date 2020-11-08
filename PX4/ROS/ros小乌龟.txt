@@ -1,0 +1,14 @@
+#ros小乌龟仿真教程
+1.打开一个终端，启动ros master
+rosecore
+
+2.再打开一个终端
+rosrun turtlesim turtlesim_node
+
+3.再打开一个终端
+rosrun turtlesim turtle_teleop_key
+
+4.此时可以用上下左右键控制
+
+5.查看节点关系图
+新建终端，输入rqt_graph

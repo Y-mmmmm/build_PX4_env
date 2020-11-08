@@ -1,0 +1,146 @@
+
+suda@suda:~$ rosrun gazebo_ros gazebo
+[ INFO] [1584693639.178657503]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1584693639.181735886]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+gzserver: symbol lookup error: /usr/lib/x86_64-linux-gnu/libsdformat.so.4: undefined symbol: _ZN8ignition4math15SemanticVersionC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+
+解决办法：
+suda@suda:~$ sudo apt upgrade libignition-math2
+[sudo] suda 的密码： 
+正在读取软件包列表... 完成
+正在分析软件包的依赖关系树       
+正在读取状态信息... 完成       
+正在计算更新... 完成
+下列软件包是自动安装的并且现在不需要了：
+  fltk1.3-doc fluid fonts-lato hddtemp libassimp-dev libassimp3v5
+  libavdevice-dev libavdevice-ffmpeg56 libavfilter-dev libavfilter-ffmpeg5
+  libavresample-dev libavresample-ffmpeg2 libcollada-dom2.4-dp-dev
+  libcollada-dom2.4-dp0 libflann-dev libflann1.8 libfltk-cairo1.3
+  libfltk-forms1.3 libfltk-gl1.3 libfltk-images1.3 libfltk1.3 libfltk1.3-dev
+  libignition-cmake-dev libignition-common libignition-common-dev
+  libignition-fuel-tools-dev libignition-fuel-tools1-1
+  libignition-fuel-tools1-dev libignition-math4 libignition-math4-dev
+  libignition-msgs libignition-msgs-dev libignition-transport4
+  libignition-transport4-dev libinput-dev libjs-jquery-ui libopenni-dev
+  libopenni-sensor-pointclouds0 libopenni0 libpcl-apps1.7 libpcl-common1.7
+  libpcl-dev libpcl-features1.7 libpcl-filters1.7 libpcl-io1.7
+  libpcl-kdtree1.7 libpcl-keypoints1.7 libpcl-octree1.7 libpcl-outofcore1.7
+  libpcl-people1.7 libpcl-recognition1.7 libpcl-registration1.7
+  libpcl-sample-consensus1.7 libpcl-search1.7 libpcl-segmentation1.7
+  libpcl-surface1.7 libpcl-tracking1.7 libpcl-visualization1.7 libpcl1.7
+  libpostproc-dev libpostproc-ffmpeg53 libpyside-py3-2.0 libpyside2-dev
+  libpyside2.0 libqgsttools-p1 libqhull-dev libqhull7 libqt5multimediaquick-p5
+  libqt5multimediawidgets5 libqt5script5 libqt5scripttools5 libqt5svg5-dev
+  libqt5x11extras5 libqt5x11extras5-dev libqt5xmlpatterns5
+  libqt5xmlpatterns5-dev libqt5xmlpatterns5-private-dev libqwt-headers
+  libqwt-qt5-6 libqwt-qt5-dev libruby2.3 libsdl1.2debian libshiboken-py3-2.0
+  libshiboken2-dev libshiboken2.0 libsodium18 libudev-dev liburdfdom-tools
+  libyaml-dev libzip-dev libzip4 libzmq3-dev libzmq5 openni-utils pyqt5-dev
+  python-cycler python-imaging python-matplotlib python-matplotlib-data
+  python-opengl python-psutil python-pydot python-pyqt5 python-pyqt5.qtopengl
+  python-pyqt5.qtsvg python-pyqt5.qtwebkit python-pyside2
+  python-pyside2.qtconcurrent python-pyside2.qtcore python-pyside2.qtgui
+  python-pyside2.qthelp python-pyside2.qtnetwork python-pyside2.qtprintsupport
+  python-pyside2.qtqml python-pyside2.qtquick python-pyside2.qtquickwidgets
+  python-pyside2.qtscript python-pyside2.qtsql python-pyside2.qtsvg
+  python-pyside2.qttest python-pyside2.qtuitools python-pyside2.qtwebkit
+  python-pyside2.qtwebkitwidgets python-pyside2.qtwidgets
+  python-pyside2.qtx11extras python-pyside2.qtxml python-sip python-sip-dev
+  python-tz qtbase5-private-dev qtdeclarative5-private-dev qtmultimedia5-dev
+  qtscript5-dev qtscript5-private-dev qttools5-dev-tools rake
+  ros-kinetic-actionlib-tutorials ros-kinetic-bond-core ros-kinetic-bondpy
+  ros-kinetic-camera-calibration ros-kinetic-cmake-modules
+  ros-kinetic-collada-parser ros-kinetic-collada-urdf ros-kinetic-common-msgs
+  ros-kinetic-common-tutorials ros-kinetic-compressed-depth-image-transport
+  ros-kinetic-compressed-image-transport ros-kinetic-depth-image-proc
+  ros-kinetic-desktop ros-kinetic-diagnostic-aggregator
+  ros-kinetic-diagnostic-analysis ros-kinetic-diagnostic-common-diagnostics
+  ros-kinetic-diagnostics ros-kinetic-eigen-conversions
+  ros-kinetic-eigen-stl-containers ros-kinetic-executive-smach
+  ros-kinetic-filters ros-kinetic-geometric-shapes ros-kinetic-geometry
+  ros-kinetic-geometry-tutorials ros-kinetic-gl-dependency
+  ros-kinetic-image-common ros-kinetic-image-geometry
+  ros-kinetic-image-pipeline ros-kinetic-image-proc
+  ros-kinetic-image-publisher ros-kinetic-image-rotate
+  ros-kinetic-image-transport-plugins ros-kinetic-image-view
+  ros-kinetic-interactive-marker-tutorials ros-kinetic-interactive-markers
+  ros-kinetic-joint-state-publisher ros-kinetic-kdl-conversions
+  ros-kinetic-kdl-parser ros-kinetic-laser-assembler ros-kinetic-laser-filters
+  ros-kinetic-laser-geometry ros-kinetic-laser-pipeline
+  ros-kinetic-librviz-tutorial ros-kinetic-map-msgs ros-kinetic-media-export
+  ros-kinetic-mk ros-kinetic-nodelet-core ros-kinetic-nodelet-topic-tools
+  ros-kinetic-nodelet-tutorial-math ros-kinetic-octomap ros-kinetic-orocos-kdl
+  ros-kinetic-pcl-conversions ros-kinetic-pcl-msgs ros-kinetic-pcl-ros
+  ros-kinetic-perception ros-kinetic-perception-pcl
+  ros-kinetic-pluginlib-tutorials ros-kinetic-python-orocos-kdl
+  ros-kinetic-python-qt-binding ros-kinetic-qt-dotgraph ros-kinetic-qt-gui
+  ros-kinetic-qt-gui-cpp ros-kinetic-qt-gui-py-common
+  ros-kinetic-qwt-dependency ros-kinetic-random-numbers
+  ros-kinetic-resource-retriever ros-kinetic-robot ros-kinetic-robot-model
+  ros-kinetic-robot-state-publisher ros-kinetic-ros ros-kinetic-ros-base
+  ros-kinetic-ros-comm ros-kinetic-ros-core ros-kinetic-ros-tutorials
+  ros-kinetic-rosbash ros-kinetic-rosboost-cfg ros-kinetic-roscpp-core
+  ros-kinetic-roscpp-tutorials ros-kinetic-roscreate ros-kinetic-roslang
+  ros-kinetic-roslint ros-kinetic-roslisp ros-kinetic-rosmake
+  ros-kinetic-rospy-tutorials ros-kinetic-rqt-action ros-kinetic-rqt-bag
+  ros-kinetic-rqt-bag-plugins ros-kinetic-rqt-common-plugins
+  ros-kinetic-rqt-console ros-kinetic-rqt-dep ros-kinetic-rqt-graph
+  ros-kinetic-rqt-gui ros-kinetic-rqt-gui-cpp ros-kinetic-rqt-gui-py
+  ros-kinetic-rqt-image-view ros-kinetic-rqt-launch
+  ros-kinetic-rqt-logger-level ros-kinetic-rqt-moveit ros-kinetic-rqt-msg
+  ros-kinetic-rqt-nav-view ros-kinetic-rqt-plot ros-kinetic-rqt-pose-view
+  ros-kinetic-rqt-publisher ros-kinetic-rqt-py-common
+  ros-kinetic-rqt-py-console ros-kinetic-rqt-reconfigure
+  ros-kinetic-rqt-robot-dashboard ros-kinetic-rqt-robot-monitor
+  ros-kinetic-rqt-robot-plugins ros-kinetic-rqt-robot-steering
+  ros-kinetic-rqt-runtime-monitor ros-kinetic-rqt-rviz
+  ros-kinetic-rqt-service-caller ros-kinetic-rqt-shell ros-kinetic-rqt-srv
+  ros-kinetic-rqt-tf-tree ros-kinetic-rqt-top ros-kinetic-rqt-topic
+  ros-kinetic-rqt-web ros-kinetic-rviz ros-kinetic-rviz-plugin-tutorials
+  ros-kinetic-rviz-python-tutorial ros-kinetic-self-test
+  ros-kinetic-shape-msgs ros-kinetic-smach ros-kinetic-smach-msgs
+  ros-kinetic-smach-ros ros-kinetic-stage ros-kinetic-stage-ros
+  ros-kinetic-stereo-image-proc ros-kinetic-stereo-msgs
+  ros-kinetic-tf-conversions ros-kinetic-tf2-eigen
+  ros-kinetic-tf2-geometry-msgs ros-kinetic-tf2-kdl
+  ros-kinetic-theora-image-transport ros-kinetic-turtle-actionlib
+  ros-kinetic-turtle-tf2 ros-kinetic-urdf-parser-plugin
+  ros-kinetic-urdf-tutorial ros-kinetic-vision-opencv
+  ros-kinetic-visualization-marker-tutorials ros-kinetic-visualization-msgs
+  ros-kinetic-visualization-tutorials ros-kinetic-viz
+  ros-kinetic-webkit-dependency ros-kinetic-xacro ruby ruby-did-you-mean
+  ruby-minitest ruby-net-telnet ruby-power-assert ruby-test-unit ruby2.3
+  rubygems-integration sbcl shiboken2 sip-dev snapd-login-service
+  tango-icon-theme ttf-liberation
+使用'sudo apt autoremove'来卸载它(它们)。
+下列软件包将被升级：
+  libignition-math2 libignition-math2-dev
+升级了 2 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 0 个软件包未被升级。
+需要下载 104 kB 的归档。
+解压缩后会消耗 220 kB 的额外空间。
+您希望继续执行吗？ [Y/n] Y
+获取:1 http://packages.osrfoundation.org/gazebo/ubuntu-stable xenial/main amd64 libignition-math2-dev amd64 2.9.0-1~xenial [52.1 kB]
+获取:2 http://packages.osrfoundation.org/gazebo/ubuntu-stable xenial/main amd64 libignition-math2 amd64 2.9.0-1~xenial [52.1 kB]
+已下载 104 kB，耗时 9秒 (11.4 kB/s)                                            
+(正在读取数据库 ... 系统当前共安装有 316075 个文件和目录。)
+正准备解包 .../libignition-math2-dev_2.9.0-1~xenial_amd64.deb  ...
+正在将 libignition-math2-dev:amd64 (2.9.0-1~xenial) 解包到 (2.2.3+dfsg1-4) 上 ...
+正准备解包 .../libignition-math2_2.9.0-1~xenial_amd64.deb  ...
+正在将 libignition-math2:amd64 (2.9.0-1~xenial) 解包到 (2.2.3+dfsg1-4) 上 ...
+正在处理用于 libc-bin (2.23-0ubuntu11) 的触发器 ...
+正在设置 libignition-math2:amd64 (2.9.0-1~xenial) ...
+正在设置 libignition-math2-dev:amd64 (2.9.0-1~xenial) ...
+正在处理用于 libc-bin (2.23-0ubuntu11) 的触发器 ...
+
+
+##运行gazebo 闪退
+
+
+suda@suda:~$ rosrun gazebo_ros gazebo
+[ INFO] [1584694121.169124338]: Finished loading Gazebo ROS API Plugin.
+[ INFO] [1584694121.172871562]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...
+[ INFO] [1584694121.913912378]: waitForService: Service [/gazebo/set_physics_properties] is now available.
+[ INFO] [1584694122.029574668]: Physics dynamic reconfigure ready.
+VMware: vmw_ioctl_command error 无效的参数.
+Killed
+

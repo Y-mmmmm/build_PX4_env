@@ -1,0 +1,163 @@
+a-ming@developer:~$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+a-ming@developer:~$ ls
+examples.desktop  Firmware  公共的  模板  视频  图片  文档  下载  音乐  桌面
+a-ming@developer:~$ cd Firmware
+a-ming@developer:~/Firmware$ git status
+位于分支 master
+您的分支与上游分支 'origin/master' 一致。
+尚未暂存以备提交的变更：
+  （使用 "git add/rm <文件>..." 更新要提交的内容）
+  （使用 "git checkout -- <文件>..." 丢弃工作区的改动）
+
+	删除：     Tools/jMAVSim
+
+修改尚未加入提交（使用 "git add" 和/或 "git commit -a"）
+a-ming@developer:~/Firmware$ git tag
+ALTCTRL_flight_2013-04-20
+NuttX-6.16
+alpha_0.2
+alpha_0.3
+althold_flight_2013-04-20
+ardrone_flight
+first_pos_control_flight
+fixedwing_0.1
+fixedwing_stable
+stable_manual_flight
+v1.0.0
+v1.0.0-rc1
+v1.0.0-rc2
+v1.0.0-rc3
+v1.0.0-rc4
+v1.0.0beta1
+v1.0.0beta2
+v1.0.0beta3
+v1.0.0rc10
+v1.0.0rc11
+v1.0.0rc12
+v1.0.0rc5
+v1.0.0rc6
+v1.0.0rc7
+v1.0.0rc8
+v1.0.0rc9
+v1.0.1
+v1.1.0
+v1.1.0beta1
+v1.1.0beta2
+v1.1.0beta3
+v1.1.1
+v1.1.2
+v1.1.3
+v1.10.0
+v1.10.0-beta1
+v1.10.0-beta2
+v1.10.0-beta3
+v1.10.0-beta4
+v1.10.0-rc1
+v1.10.0-rc2
+v1.10.0-rc3
+v1.10.1
+v1.11.0-beta1
+v1.2.0
+v1.3.0rc1
+v1.3.0rc2
+v1.3.0rc3
+v1.3.1
+v1.3.2
+v1.3.3
+v1.3.4
+v1.4.0rc1
+v1.4.0rc2
+v1.4.0rc3
+v1.4.0rc4
+v1.4.1
+v1.4.1rc1
+v1.4.1rc2
+v1.4.1rc3
+v1.4.1rc4
+v1.4.2
+v1.4.3
+v1.4.4
+v1.4.4rc1
+v1.5.0
+v1.5.1
+v1.5.1rc1
+v1.5.1rc2
+v1.5.1rc3
+v1.5.1rc4
+v1.5.2
+v1.5.4
+v1.5.5
+v1.6.0-rc2
+v1.6.0-rc3
+v1.6.0-rc4
+v1.6.0rc1
+v1.6.2
+v1.6.3
+v1.6.4
+v1.6.5
+v1.7.0
+v1.7.0-rc0
+v1.7.0-rc1
+v1.7.0-rc2
+v1.7.0-rc3
+v1.7.0-rc4
+v1.7.1
+v1.7.2
+v1.7.3
+v1.7.3beta
+v1.7.4beta
+v1.8.0
+v1.8.0-beta1
+v1.8.0-beta2
+v1.8.0-rc0
+v1.8.1
+v1.8.2
+v1.9.0
+v1.9.0-alpha
+v1.9.0-beta1
+v1.9.0-beta2
+v1.9.0-beta3
+v1.9.0-rc0
+v1.9.0-rc1
+v1.9.0-rc2
+v1.9.1
+v1.9.1-rc0
+v1.9.2
+a-ming@developer:~/Firmware$ git checkout v1.8.2
+Note: checking out 'v1.8.2'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD 目前位于 f13bbac... mc_att_control: copy sensor_correction topic once initially
+a-ming@developer:~/Firmware$ git checkout -b v1.8.2
+切换到一个新分支 'v1.8.2'
+a-ming@developer:~/Firmware$ git status
+位于分支 v1.8.2
+无文件要提交，干净的工作区
+a-ming@developer:~/Firmware$ git checkout -b master
+fatal: 一个分支名 'master' 已经存在。
+a-ming@developer:~/Firmware$ git status
+位于分支 v1.8.2
+无文件要提交，干净的工作区
+a-ming@developer:~/Firmware$ git branch
+  master
+* v1.8.2
+a-ming@developer:~/Firmware$ ls
+cmake               eclipse.project           mavlink        src
+CMakeLists.txt      Firmware.sublime-project  msg            test
+CODE_OF_CONDUCT.md  integrationtests          package.xml    test_data
+CONTRIBUTING.md     Jenkinsfile               platforms      Tools
+CTestConfig.cmake   launch                    posix-configs
+Documentation       LICENSE                   README.md
+eclipse.cproject    Makefile                  ROMFS
+
+
+

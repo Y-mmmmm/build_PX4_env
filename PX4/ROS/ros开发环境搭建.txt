@@ -1,0 +1,43 @@
+#ros开发环境搭建
+#Ubuntu16.04  Kinetic 版本
+
+1.设置软件更新环境，全打钩，并选择阿里云
+
+2.安装源
+国外源
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+
+国内源（推荐）
+sudo sh -c '. /etc/lsb-release && echo "deb http://mirrors.ustc.edu.cn/ros/ubuntu/ $DISTRIB_CODENAME main" > /etc/apt/sources.list.d/ros-latest.list'
+
+3.设置key（网速好一次过，网不好多试几次）
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+
+4.更新
+sudo apt-get update
+
+5.安装桌面完整版
+sudo apt-get install ros-kinetic-desktop-full
+
+ps:这一步安装的gazebo会和px4的gazebo冲突，可以卸载px4安装的gazebo sudo apt-get remove gazebo-*
+然后重装gazebo sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
+
+
+6.解决依赖（这里很看网速和电脑配置）
+sudo gedit /etc/hosts 
+在最后一行添加 151.101.84.133（这里是TAB键）raw.githubusercontent.com
+
+sudo rosdep init
+
+rosdep update
+
+7.环境设置
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+
+source ~/.bashrc
+
+8.安装rosinstall辅助工具包
+sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+
+
+
